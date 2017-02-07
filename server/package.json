@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cors": "2.8.1",
+    "express": "4.14.1",
+    "mongoose": "4.8.1",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.3.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
