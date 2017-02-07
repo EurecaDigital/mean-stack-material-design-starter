@@ -3,6 +3,13 @@ MEAN stack starter project using Angular 2, Express, MongoDB, Node.js and Materi
 
 Based on a fork of https://github.com/preboot/angular2-webpack
 
+## Requirements
+Requires MongoDB to be installed on your machine
+
+Mac installation instructions: https://www.youtube.com/watch?v=Mipgg9D5aFk
+
+Windows installation instructions: https://www.youtube.com/watch?v=1uFY60CESlM
+
 ## Getting started
 `git clone https://github.com/dannypule/mean-stack-material-design-starter.git`
 
@@ -25,6 +32,10 @@ Based on a fork of https://github.com/preboot/angular2-webpack
 `npm install` (install server-side dependencies)
 
 `npm start` (start the Node.js server)
+
+<<< open a new command line tab or window >>>
+
+`mongod`
 
 Navigate to http://localhost:7070 to see the app in action
 
