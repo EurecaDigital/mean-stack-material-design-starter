@@ -1,4 +1,6 @@
 # mean-blog - Open Source project MIT License
-Blogging and users management app. CRUD using MEAN stack. Client and server separated and talk to each other over the wire.
+MEAN stack starter seed using Angular 2, Express, MongoDB, Node.js and Material Design Lite.
 
-### Contributor: Danny Pule
+Based on a fork of https://github.com/preboot/angular2-webpack
+
+### Contributor(s): Danny Pule
