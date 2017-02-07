@@ -1,0 +1,9 @@
+{
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.mouseWheelZoom": true,
+    "editor.selectionHighlight": false,
+    "workbench.editor.showTabs": true,
+    "editor.quickSuggestionsDelay": 0,
+    "git.enabled": false,
+    "editor.parameterHints": false
+}

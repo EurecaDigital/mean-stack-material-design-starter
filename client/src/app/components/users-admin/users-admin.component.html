@@ -1,0 +1,50 @@
+<div class="users-component">
+  <div class="user-edit-card mdl-card mdl-shadow--2dp">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label current-user-full-name" [class.is-dirty]="editingUser">
+      <input class="mdl-textfield__input" type="text" id="name" [(ngModel)]="currentUser.name">
+      <label class="mdl-textfield__label" for="name">Full Name</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label current-user-email" [class.is-dirty]="editingUser">
+      <input class="mdl-textfield__input" type="text" id="email" [(ngModel)]="currentUser.email">
+      <label class="mdl-textfield__label" for="email">Email</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label current-user-username" [class.is-dirty]="editingUser">
+      <input class="mdl-textfield__input" type="text" id="username" [(ngModel)]="currentUser.username">
+      <label class="mdl-textfield__label" for="username">Username</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label current-user-password" [class.is-dirty]="editingUser">
+      <input class="mdl-textfield__input" type="text" id="password" [(ngModel)]="currentUser.password">
+      <label class="mdl-textfield__label" for="password">Password</label>
+    </div>
+    <button *ngIf="!editingUser" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="addNewUser(currentUser)">
+      <span>Add New User</span>
+    </button>
+
+    <div class="editing-buttons" *ngIf="editingUser">
+      <button 
+        class="cancel-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+        (click)="disableUserEditMode()"
+      >
+        Cancel
+      </button>
+      <button 
+        class="update-button mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" 
+        (click)="updateUser(currentUser)"
+      >
+        <span>Update User</span>
+      </button>
+    </div>
+  </div>
+
+  <div *ngFor="let user of users" class="user-card mdl-card mdl-shadow--2dp">
+    <i class="material-icons close" (click)="removeUser(user)">delete</i>
+    <i class="material-icons edit" (click)="enableUserEditMode(user)">mode_edit</i>
+    <p><span>_id:</span> {{user._id}}</p>
+    <p><span>name:</span> {{user.name}}</p>
+    <p><span>username: </span>{{user.username}}</p>
+    <p><span>password:</span> {{user.password}}</p>
+    <p><span>admin:</span> {{user.admin}}</p>
+    <p><span>created_at:</span> {{user.created_at}}</p>
+    <p><span>updated_at:</span> {{user.updated_at}}</p>
+  </div>
+</div>

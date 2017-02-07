@@ -1,0 +1,48 @@
+.users-component {
+    // color: #f87c08;
+    .user-edit-card {
+        max-width: 460px;
+        .mdl-textfield {
+            max-width: none;
+            width: auto;
+            display: block;
+        }
+        .editing-buttons {
+            .cancel-button {
+                width: calc(50% - 5px);
+                display: inline-block;
+            }
+            .update-button {
+                width: calc(50% - 5px);
+                display: inline-block;
+                float: right;
+            }
+        }
+    }
+    .user-card {
+        position: relative;
+        &:last-of-type {
+            margin-bottom: 10px;
+        }
+        i {
+            position: absolute;
+            top: 5px;
+            cursor: pointer;
+            opacity: .4;
+            &.close {
+                right: 5px;
+            }
+            &.edit {
+                right: 32px;
+            }
+        }
+        p {
+            margin: 3px 0;
+            font-size: 17px;
+            span {
+                font-weight: bold;
+                color: rgb(63, 81, 181);
+            }
+        }
+    }
+}
