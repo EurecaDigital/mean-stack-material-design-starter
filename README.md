@@ -21,7 +21,7 @@ MongoDB Windows installation instructions: https://www.youtube.com/watch?v=1uFY6
 
 `npm install` (install client-side dependencies)
 
-`npm start` (start the server on client-side. Access at http://localhost:7070)
+`npm start` (start the server on client-side. Access at http://localhost:8080)
 
 <<< open a new command line tab or window >>>
 
@@ -37,7 +37,7 @@ MongoDB Windows installation instructions: https://www.youtube.com/watch?v=1uFY6
 
 `mongod`
 
-Navigate to http://localhost:7070 to see the app in action
+Navigate to http://localhost:8080 to see the app in action
 
 
 ### Contributor(s): Danny Pule
