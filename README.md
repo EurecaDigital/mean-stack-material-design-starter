@@ -10,6 +10,8 @@ MongoDB Mac installation instructions: https://www.youtube.com/watch?v=Mipgg9D5a
 
 MongoDB Windows installation instructions: https://www.youtube.com/watch?v=1uFY60CESlM
 
+Install just the requirements needed for node-gyp from https://github.com/nodejs/node-gyp
+
 ## Getting started
 `git clone https://github.com/dannypule/mean-stack-material-design-starter.git`
 
